@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:p="http://primefaces.org/ui"
+>
+
+<h:head>
+    <title>PrimeFaces Autocomplete SuggestionBox bug</title>
+</h:head>
+
+<h:body>
+    <div class="card ui-fluid">
+        <h:form>
+            <p:growl id="msgs" showDetail="true" skipDetailIfEqualsSummary="true"/>
+
+            <h5 class="mt-0">Single</h5>
+            <div class="formgrid grid">
+                <div class="field col-12 md:col-4">
+                    <p:outputLabel value="Simple" for="@next"/>
+                    <p:autoComplete id="acSimple" value="#{autoCompleteView.txt1}"
+                                    completeMethod="#{autoCompleteView.completeText}" scrollHeight="250"/>
+                </div>
+
+            </div>
+        </h:form>
+
+    </div>
+
+</h:body>
+</html>
+
